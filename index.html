@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>timecraft</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- fonts -->
+	<link href="//fonts.googleapis.com/css?family=Montserrat:300,400,700,900" rel="stylesheet" type="text/css">
+	<link href="//fonts.googleapis.com/css?family=Playfair+Display:300,400,700,900" rel="stylesheet" type="text/css">
+	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans">
+
+	<!-- fontAwesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!--swiper slider-->
+	<link rel="stylesheet" href="css/swiper.css">
+
+	<!-- main css -->
+	<!-- <link rel="stylesheet" href="css/styles.min.css"> -->
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__top  clearfix">
+					<ul class="top-list header__top-list header__top-item">
+						<span class="top-list__bars" id="js-bars"><i class="fas fa-bars"></i></span>
+						<div class="top-list__cell" id='js-cell-bars'>
+							<li class="top-list__item top-list__item--currency">
+								<span class="top-list__link--currency" id="js-currency"><span id="current-devise">eur</span><i class="fas fa-angle-down top-list__angle-down"></i></span>
+								<ul class="top-list__sub-list" id="js-sub-currency">
+									<li class="top-list__sub-item">usd</li>
+									<li class="top-list__sub-item">eur</li>
+									<li class="top-list__sub-item">gbp</li>
+								</ul>
+							</li>
+							<li class="top-list__item"><a href="#" class="top-list__link">Log in</a></li>
+							<li class="top-list__item"><a href="#" class="top-list__link">Create an account</a></li>
+							<li class="top-list__item"><a href="#" class="top-list__link">Checkout</a></li>
+						</div>
+					</ul>
+					<div class="header__middle-box header__top-item clearfix">
+						<p class="header__order">Free shipping on all orders over </p>
+						<a href="#" class="header__brand">TIMECRAFT</a>
+					</div>
+					<div class="header__left-top header__top-item clearfix">
+						<div class="header__phone-number">
+							<a href="tel:1-800-1234-567" class="header__telephone"><i class="fas fa-mobile-alt"></i>1-800-1234-567</a>
+						</div>
+						<div class="social-group header__socials">
+							<a href="#" class="social-group__socials-icon"><i class="fab fa-facebook-f"></i></a>
+							<a href="#" class="social-group__socials-icon"><i class="fab fa-instagram"></i></a>
+							<a href="#" class="social-group__socials-icon"><i class="fab fa-twitter"></i></a>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</header>
+		<div class="navbar" id="nav-bar">
+			<div class="container">
+				<nav class="nav-menu header__nav-menu">
+					<ul class="nav-menu__list clearfix" id="nav-bar"><!-- test -->
+						<h3 class="nav-menu__bar-hidden" id="js-hidden-Bar">TIMECRAFT<i class="fas fa-angle-down nav-menu__angle-down angle-header"></i></h3>
+						<div class="nav-menu__wrap-item" id="js-wrap-item">
+						<li class="nav-menu__item"><a href="#" class="nav-menu__link nav-menu__link--home">home</a></li>
+						<li class="nav-menu__item"><a href="#" class="nav-menu__link" >products<i class="fas fa-angle-down nav-menu__angle-down nav-menu__angle-down--sub-icon" id="js-nav-sub"></i></a>
+							<ul class="sub-nav nav-menu__sub-list clearfix">
+								<li class="nav-menu__sub-item"><h5 class="nav-menu__sub-item-title">men's<i class="fas fa-angle-down nav-menu__angle-down nav-menu__angle-down--sub-icon js-sub-title"></i></h5>
+									<ul class="nav-menu__element-list js-elt-list" >
+										<li class="nav-menu__element-item" >
+											<a href="#" class="nav-menu__element-link">New In:Men's</a>
+										</li>
+										<li class="nav-menu__element-item">
+											<a href="#" class="nav-menu__element-link">Men's Classic</a>
+										</li>
+										<li class="nav-menu__element-item">
+											<a href="#" class="nav-menu__element-link">Men's Designer Label</a>
+										</li>
+										<li class="nav-menu__element-item">
+											<a href="#" class="nav-menu__element-link">Men's Luxury</a>
+										</li>
+										<li class="nav-menu__element-item">
+											<a href="#" class="nav-menu__element-link">Men's Sport</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-menu__sub-item"><h5 class="nav-menu__sub-item-title">women's<i class="fas fa-angle-down nav-menu__angle-down nav-menu__angle-down--sub-icon js-sub-title"></i></h5>
+									<ul class="nav-menu__element-list js-elt-list">
+										<li class="nav-menu__element-item">
+											<a href="#" class="nav-menu__element-link">New In: Women's</a>
+										</li>
+										<li class="nav-menu__element-item">
+											<a href="#" class="nav-menu__element-link">Women's Classic</a>
+										</li>
+										<li class="nav-menu__element-item">
+											<a href="#" class="nav-menu__element-link">Women's Designer Label</a>
+										</li>
+										<li class="nav-menu__element-item">
+											<a href="#" class="nav-menu__element-link">Women's Luxury</a>
+										</li>
+										<li class="nav-menu__element-item">
+											<a href="#" class="nav-menu__element-link">Women's Sport</a>
+										</li>
+									</ul>
+								</li>
+								<div class="nav-menu__cell-item">
+									<li class="nav-menu__sub-item nav-menu__sub-item--inner"><h5 class="nav-menu__sub-item-title">unisex<i class="fas fa-angle-down nav-menu__angle-down nav-menu__angle-down--sub-icon js-sub-title"></i></h5>
+										<ul class="nav-menu__element-list js-elt-list" >
+											<li class="nav-menu__element-item">
+												<a href="#" class="nav-menu__element-link">Stuhrling Original</a>
+											</li>
+											<li class="nav-menu__element-item">
+												<a href="#" class="nav-menu__element-link">Timex Unisex</a>
+											</li>
+											<li class="nav-menu__element-item">
+												<a href="#" class="nav-menu__element-link">Anne Klein</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-menu__sub-item nav-menu__sub-item--inner"><h5 class="nav-menu__sub-item-title">sports<i class="fas fa-angle-down nav-menu__angle-down nav-menu__angle-down--sub-icon js-sub-title"></i></h5>
+										<ul class="nav-menu__element-list js-elt-list" >
+											<li class="nav-menu__element-item">
+												<a href="#" class="nav-menu__element-link">Bestdon Swiss</a>
+											</li>
+											<li class="nav-menu__element-item">
+												<a href="#" class="nav-menu__element-link">Motorola Moto 360</a>
+											</li>
+										</ul>
+									</li>
+								</div>
+								<div class="nav-menu__cell-item">
+									<li class="nav-menu__sub-item nav-menu__sub-item--inner"><h5 class="nav-menu__sub-item-title">luxury<i class="fas fa-angle-down nav-menu__angle-down nav-menu__angle-down--sub-icon js-sub-title"></i></h5>
+										<ul class="nav-menu__element-list js-elt-list" >
+											<li class="nav-menu__element-item">
+												<a href="#" class="nav-menu__element-link">Michael Kors</a>
+											</li>
+											<li class="nav-menu__element-item">
+												<a href="#" class="nav-menu__element-link">Nine West</a>
+											</li>
+											<li class="nav-menu__element-item">
+												<a href="#" class="nav-menu__element-link">Anne Klein</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-menu__sub-item nav-menu__sub-item--inner"><h5 class="nav-menu__sub-item-title">kid's<i class="fas fa-angle-down nav-menu__angle-down nav-menu__angle-down--sub-icon js-sub-title" ></i></h5>
+										<ul class="nav-menu__element-list js-elt-list" >
+											<li class="nav-menu__element-item">
+												<a href="#" class="nav-menu__element-link">Anne Klein</a>
+											</li>
+											<li class="nav-menu__element-item">
+												<a href="#" class="nav-menu__element-link">Louis XVI ATHOS</a>
+											</li>
+											<li class="nav-menu__element-item">
+												<a href="#" class="nav-menu__element-link">Oulm 1140</a>
+											</li>
+										</ul>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<li class="nav-menu__item"><a href="#" class="nav-menu__link">blog</a>
+							<ul class="sub-nav nav-menu__blog clearfix">
+								<li class="nav-menu__blog-item">
+									<img src="images/blog1_1024x1024.jpg" alt="" class="nav-menu__blog-image">
+									<p class="nav-menu__blog-date">Tuesday, March 29, 2016</p>
+									<a href="#" class="nav-menu__blog-title">Women’s Watches Collection 2016</a>
+									<p class="nav-menu__blog-description">The secret of our success is very simple - we respect our clients, provide them only with the high quality...</p>
+								</li>
+								<li class="nav-menu__blog-item">
+									<img src="images/blog2_1024x1024.jpg" alt="" class="nav-menu__blog-image">
+									<p class="nav-menu__blog-date">Tuesday, March 29, 2016</p>
+									<a href="#" class="nav-menu__blog-title">How To Choose What Watch To Buy</a>
+									<p class="nav-menu__blog-description">Our company knows how to satisfy all of your needs - it is a part or our official policy Thanks...</p>
+								</li>
+								<li class="nav-menu__blog-item">
+									<img src="images/blog3_1024x1024.jpg" alt="" class="nav-menu__blog-image">
+									<p class="nav-menu__blog-date">Tuesday, March 29, 2016</p>
+									<a href="#" class="nav-menu__blog-title">5 Tips To Help You Choose A Men’...</a>
+									<p class="nav-menu__blog-description">Our company cares about the clients and never lets them down Thanks for visiting our Watches store - we are...</p>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-menu__item"><a href="#" class="nav-menu__link">sale</a>
+							<ul class="sub-nav nav-menu__sale clearfix">
+								<li class="nav-menu__sale-item">
+									<img src="images/bestdon_swiss_mens_sports_watches_digital_multifuction_display_time_yellow_1_large.png" alt="" class="nav-menu__sale-image">
+									<p class="nav-menu__sale-description">Bestdon Swiss Men's Sports Watches Digital Mult...</p>
+									<p class="nav-menu__sale-price">From
+										<span class="nav-menu__money" >€62.19</span>
+										<span class="nav-menu__money-compare" >€69.30</span>
+									</p>
+								</li>
+								<li class="nav-menu__sale-item">
+									<img src="images/bestdon_swiss_mens_sports_watches_quartz_analog_six_hands_black_1_large.png" alt="" class="nav-menu__sale-image">
+									<p class="nav-menu__sale-description">Bestdon Swiss Men's Sports Watches Quartz Analo...</p>
+									<p class="nav-menu__sale-price">
+										<span class="nav-menu__money" >€62.19</span>
+										<span class="nav-menu__money-compare" >€69.30</span>
+									</p>
+								</li>
+								<li class="nav-menu__sale-item">
+									<img src="images/citizen_mens_bl5250_02l_titanium_eco_drive_watch_with_leather_band_1_large.png" alt="" class="nav-menu__sale-image">
+									<p class="nav-menu__sale-description">Citizen Men's BL5250 02L Titanium Eco Drive Wat...</p>
+									<p class="nav-menu__sale-price">From
+										<span class="nav-menu__money" >€62.19</span>
+										<span class="nav-menu__money-compare" >€69.30</span>
+									</p>
+								</li>
+								<li class="nav-menu__sale-item">
+									<img src="images/fossil_mens_stainless_steel_chronograph_watch_with_genuine_brown_leather_strap_1_large.png" alt="" class="nav-menu__sale-image">
+									<p class="nav-menu__sale-description">Fossil Men's Stainless Steel Chronograph Watch ...</p>
+									<p class="nav-menu__sale-price">
+										<span class="nav-menu__money" >€62.19</span>
+										<span class="nav-menu__money-compare" >€69.30</span>
+									</p>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-menu__item"><a href="#" class="nav-menu__link">sitemap</a></li>
+						<li class="nav-menu__item"><a href="#" class="nav-menu__link">contact us</a></li></div>
+						<li class="nav-menu__item nav-menu__item--form"><i class="fas fa-search nav-menu__link nav-menu__link--form" id="nav-search"></i>
+							<form action="#" class="nav-menu__form" id="nav-form" >
+								<input type="text" class="nav-menu__form-input" placeholder="Search store">
+								<button type="submit" class="nav-menu__form-btn"><i class="fas fa-search"></i></button>
+							</form>
+						</li>
+						<li class="nav-menu__item nav-menu__item--shopping">
+							<a href="#" class="nav-menu__link nav-menu__link--shopping"><i class="fas fa-shopping-bag"></i><span class="nav-menu__counter">0</span></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="banner">
+			<h1 class="banner__main-title">show with peace of mind</h1>
+			<div class="showcase">
+				<div class="container showcase__wrapper clearfix">
+					<a href="#" class="showcase__box">
+						<div class="showcase__image">
+							<img class="showcase__picture" src="images/custom_showcase1_img.png" alt="">
+						</div>
+						<div class="showcase__description">
+							<div class="showcase__inner-description">
+								<h2 class="showcase__inner-title">anne klein women's bracelet watch</h2>
+								<div class="showcase__wrap-btn">
+									<div class="effect-btn showcase__btn">show case</div>
+								</div>
+							</div>
+						</div>
+						<div class="showcase__prices">
+							<p class="showcase__old-price"><i class="fas fa-dollar-sign"></i>1135.00</p>
+							<p class="showcase__new-price">$955.00</p>
+						</div>
+					</a>
+					<a href="#" class="showcase__box">
+						<div class="showcase__image">
+							<img class="showcase__picture" src="images/custom_showcase2_img.png" alt="">
+						</div>
+						<div class="showcase__description">
+							<div class="showcase__inner-description">
+								<h2 class="showcase__inner-title">Bestdon Swiss Men's Sports Watch</h2>
+								<div class="showcase__wrap-btn">
+									<div class="effect-btn showcase__btn">show case</div>
+								</div>
+							</div>
+						</div>
+						<div class="showcase__prices">
+							<p class="showcase__old-price"><i class="fas fa-dollar-sign"></i>1135.00</p>
+							<p class="showcase__new-price">$955.00</p>
+						</div>
+					</a>
+					<a href="#" class="showcase__box">
+						<div class="showcase__image">
+							<img class="showcase__picture" src="images/custom_showcase3_img.png" alt="">
+						</div>
+						<div class="showcase__description">
+							<div class="showcase__inner-description">
+								<h2 class="showcase__inner-title">Louis XV Sapphire Mechanical</h2>
+								<div class="showcase__wrap-btn">
+									<div class="effect-btn showcase__btn">show case</div>
+								</div>
+							</div>
+						</div>
+						<div class="showcase__prices">
+							<p class="showcase__old-price"><i class="fas fa-dollar-sign"></i>1135.00</p>
+							<p class="showcase__new-price">$955.00</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="products">
+			<div class="container">
+				<h2 class="products__title">featured products</h2>
+				<div class="swiper-container products__swiper">
+					<div class="products__slider swiper-wrapper">
+						<div class="article products__article  swiper-slide">
+							<span class="news article__new">new!</span>
+							<span class="news article__percent">-10%</span>
+							<a href="#" class="article__image-link">
+								<img src="images/citizen_mens_bl5250_02l_titanium_eco_drive_watch_with_leather_band_1_medium.png" alt="" class="article__picture">
+								<img src="images/citizen_mens_bl5250_02l_titanium_eco_drive_watch_with_leather_band_2_medium.png" alt="" class="article__picture article__picture--over">
+							</a>
+							<div class="article__text"><a href="#" class="article__text-link">Citizen Men's BL5250 02L Titanium Eco Drive Wat...</a></div>
+							<p class="article__sale-price">From
+								<span class="article__money" >€62.19</span>
+								<span class="article__money-compare" >€69.30</span>
+							</p>
+							<div class="effect-btn article__btn">add to cart</div>
+							<span class="article__view">quick view</span>
+						</div>
+						<div class="article products__article  swiper-slide">
+							<span class="news article__new">new!</span>
+							<span class="news article__percent">-10%</span>
+							<a href="#" class="article__image-link">
+								<img src="images/meku_handmade_wooden_wrist_watches_quartz_with_solid_natural_zebrawood_and_date_calendar_1_medium.png" alt="" class="article__picture">
+								<img src="images/meku_handmade_wooden_wrist_watches_quartz_with_solid_natural_zebrawood_and_date_calendar_2_medium.png" alt="" class="article__picture article__picture--over">
+							</a>
+							<div class="article__text"><a href="#" class="article__text-link">MEKU Handmade Wooden Wrist Watches Quartz with ...</a></div>
+							<p class="article__sale-price">From
+								<span class="article__money" >€62.19</span>
+								<span class="article__money-compare" >€69.30</span>
+							</p>
+							<div class="effect-btn article__btn">add to cart</div>
+							<span class="article__view">quick view</span>
+						</div>
+						<div class="article products__article  swiper-slide">
+							<span class="news article__new">new!</span>
+							<span class="news article__percent">-10%</span>
+							<a href="#" class="article__image-link">
+								<img src="images/bestdon_swiss_mens_sports_watches_digital_multifuction_display_time_yellow_1_medium.png" alt="" class="article__picture">
+								<img src="images/bestdon_swiss_mens_sports_watches_digital_multifuction_display_time_yellow_2_medium.png" alt="" class="article__picture article__picture--over">
+							</a>
+							<div class="article__text"><a href="#" class="article__text-link">Bestdon Swiss Men's Sports Watches Digital Mult...</a></div>
+							<p class="article__sale-price">From
+								<span class="article__money" >€62.19</span>
+								<span class="article__money-compare" >€69.30</span>
+							</p>
+							<div class="effect-btn article__btn">add to cart</div>
+							<span class="article__view">quick view</span>
+						</div>
+						<div class="article products__article  swiper-slide">
+							<span class="news article__new">new!</span>
+							<span class="news article__percent">-10%</span>
+							<a href="#" class="article__image-link">
+								<img src="images/anne_klein_womens_10_9815svtt_two_tone_bracelet_watch_1_medium.png" alt="" class="article__picture">
+								<img src="images/anne_klein_womens_10_9815svtt_two_tone_bracelet_watch_2_medium.png" alt="" class="article__picture article__picture--over">
+							</a>
+							<div class="article__text"><a href="#" class="article__text-link">Anne Klein Women's 10 9815SVTT Two Tone Bracele...</a></div>
+							<p class="article__sale-price">From
+								<span class="article__money" >€62.19</span>
+								<span class="article__money-compare" >€69.30</span>
+							</p>
+							<div class="effect-btn article__btn">add to cart</div>
+							<span class="article__view">quick view</span>
+						</div>
+						<div class="article products__article  swiper-slide">
+							<span class="news article__new">new!</span>
+							<span class="news article__percent">-10%</span>
+							<a href="#" class="article__image-link">
+								<img src="images/fossil_womens_es3204_riley_silver_and_gold_tone_watch_1_medium.png" alt="" class="article__picture">
+								<img src="images/fossil_womens_es3204_riley_silver_and_gold_tone_watch_2_medium.png" alt="" class="article__picture article__picture--over">
+							</a>
+							<div class="article__text"><a href="#" class="article__text-link">Fossil Women's ES3204 Riley Silver and Gold Ton...</a></div>
+							<p class="article__sale-price">From
+								<span class="article__money" >€62.19</span>
+								<span class="article__money-compare" >€69.30</span>
+							</p>
+							<div class="effect-btn article__btn">add to cart</div>
+							<span class="article__view">quick view</span>
+						</div>
+					</div>
+					<!--  Add Pagination -->
+				    <!--  <div class="swiper-pagination"></div> -->
+				   <!--  Add Arrows -->
+
+				    <div class="swiper-button-next"></div>
+				    <div class="swiper-button-prev"></div> 
+
+				</div>
+				<!-- second slider -->
+				<div class="products__fix-item">
+					<div class="products__slider">
+						<div class="article products__article clearfix">
+							<span class="news article__new">new!</span>
+							<span class="news article__percent">-10%</span>
+							<a href="#" class="article__image-link">
+								<img src="images/michael_kors_womens_mk2256_runway_brown_watch_1_medium.png" alt="" class="article__picture">
+								<img src="images/michael_kors_womens_mk2256_runway_brown_watch_2_medium.png" alt="" class="article__picture article__picture--over">
+							</a>
+							<div class="article__content">
+								<div class="article__text"><a href="#" class="article__text-link">Michael Kors Women's MK2256 Runway Brown Watch</a></div>
+								<p class="article__sale-price">From
+									<span class="article__money" >€62.19</span>
+									<span class="article__money-compare" >€69.30</span>
+								</p>
+								<div class="effect-btn article__btn">add to cart</div>
+								<span class="article__view">quick view</span>
+							</div>	
+						</div>
+						<div class="article products__article clearfix">
+							<span class="news article__new">new!</span>
+							<span class="news article__percent">-35%</span>
+							<a href="#" class="article__image-link">
+								<img src="images/nine_west_womens_nw_1578chgb_champagne_dial_gold_tone_bracelet_watch_1_medium.png" alt="" class="article__picture">
+								<img src="images/nine_west_womens_nw_1578chgb_champagne_dial_gold_tone_bracelet_watch_2_medium.png" alt="" class="article__picture article__picture--over">
+							</a>
+							<div class="article__content">
+								<div class="article__text">
+									<a href="#" class="article__text-link">Nine West Women's NW 1578CHGB Champagne Dial Go...</a>
+								</div>
+								<p class="article__sale-price">From
+									<span class="article__money" >€62.19</span>
+									<span class="article__money-compare" >€69.30</span>
+								</p>
+								<div class="effect-btn article__btn">add to cart</div>
+								<span class="article__view">quick view</span>
+							</div>
+						</div>
+						<div class="article products__article clearfix">
+							<span class="news article__new">new!</span>
+							<!-- <span class="news article__percent">-10%</span> -->
+							<a href="#" class="article__image-link">
+								<img src="images/bestdon_swiss_mens_sports_watches_digital_multifuction_display_time_yellow_1_medium.png" alt="" class="article__picture">
+								<img src="images/bestdon_swiss_mens_sports_watches_digital_multifuction_display_time_yellow_2_medium.png" alt="" class="article__picture article__picture--over">
+							</a>
+							<div class="article__content">
+								<div class="article__text"><a href="#" class="article__text-link">Bestdon Swiss Men's Sports Watches Digital Mult...</a></div>
+								<p class="article__sale-price">From
+									<span class="article__money" >€62.19</span>
+									<span class="article__money-compare" >€69.30</span>
+								</p>
+								<div class="effect-btn article__btn">add to cart</div>
+								<span class="article__view">quick view</span>
+							</div>
+						</div>
+						<div class="article products__article clearfix">
+							<span class="news article__new">new!</span>
+							<span class="news article__percent">-20%</span>
+							<a href="#" class="article__image-link">
+								<img src="images/oulm_1140_mens_large_watch_1_7a868514-4256-4f14-b932-fb80d54cdfaf_medium.png" alt="" class="article__picture">
+								<img src="images/oulm_1140_mens_large_watch_2_3d4f36b1-4773-4f12-be6b-83c542986e1c_medium.png" alt="" class="article__picture article__picture--over">
+							</a>
+							<div class="article__content">
+								<div class="article__text"><a href="#" class="article__text-link">Oulm 1140 Men's Large Watch</a></div>
+								<p class="article__sale-price">From
+									<span class="article__money" >€62.19</span>
+									<span class="article__money-compare" >€69.30</span>
+								</p>
+								<div class="effect-btn article__btn">add to cart</div>
+								<span class="article__view">quick view</span>
+							</div>
+						</div>
+						<div class="article products__article clearfix">
+							<span class="news article__new">new!</span>
+							<span class="news article__percent">-10%</span>
+							<a href="#" class="article__image-link">
+								<img src="images/samsung_galaxy_gear_smartwatch_retail_packaging__jet_black_1_medium.png" alt="" class="article__picture">
+								<img src="images/samsung_galaxy_gear_smartwatch_retail_packaging__jet_black_2_medium.png" alt="" class="article__picture article__picture--over">
+							</a>
+							<div class="article__content">
+								<div class="article__text"><a href="#" class="article__text-link">Samsung Galaxy Gear Smartwatch Retail Packaging...</a></div>
+								<p class="article__sale-price">From
+									<span class="article__money" >€62.19</span>
+									<span class="article__money-compare" >€69.30</span>
+								</p>
+								<div class="effect-btn article__btn">add to cart</div>
+								<span class="article__view">quick view</span>
+							</div>
+						</div>
+					</div>
+					<!-- Add Pagination -->
+				    <!--  <div class="swiper-pagination"></div> -->
+				    <!-- Add Arrows -->
+<!-- 
+				    <div class="swiper-button-next"></div>
+				    <div class="swiper-button-prev"></div> -->
+				</div>
+			</div>
+		</div>
+		<div class="brands">
+			<div class="container">
+				<h2 class="brands__title">popular brands</h2>
+				<div class="brands__images clearfix">
+					<div class="brands__box">
+						<a href="#" class="brands__link"><img src="images/custom_brand1_img.png" alt="" class="brands_picture"></a>
+					</div>
+					<div class="brands__box">
+						<a href="#" class="brands__link"><img src="images/custom_brand2_img.png" alt="" class="brands_picture"></a>
+					</div>
+					<div class="brands__box">
+						<a href="#" class="brands__link"><img src="images/custom_brand3_img.png" alt="" class="brands_picture"></a>
+					</div>
+					<div class="brands__box">
+						<a href="#" class="brands__link"><img src="images/custom_brand4_img.png" alt="" class="brands_picture"></a>
+					</div>
+					<div class="brands__box">
+						<a href="#" class="brands__link"><img src="images/custom_brand5_img.png" alt="" class="brands_picture"></a>
+					</div>
+					<div class="brands__box">
+						<a href="#" class="brands__link"><img src="images/custom_brand6_img.png" alt="" class="brands_picture"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="blog">
+			<div class="container">
+				<h2 class="blog__title">blog</h2>
+				<div class="blog__images clearfix">
+					<div class="blog__box">
+						<a href="#" class="blog__link"><img src="images/blog1_1024x1024.jpg" alt="" class="blog__picture"></a>
+						<h3 class="blog__subtitle">Women’s Watches Collection 2016</h3>
+					</div>
+					<div class="blog__box">
+						<a href="#" class="blog__link"><img src="images/blog2_1024x1024.jpg" alt="" class="blog__picture"></a>
+						<h3 class="blog__subtitle">How To Choose What Watch To Buy</h3>
+					</div>
+					<div class="blog__box">
+						<a href="#" class="blog__link"><img src="images/blog3_1024x1024.jpg" alt="" class="blog__picture"></a>
+						<h3 class="blog__subtitle">5 Tips To Help You Choose A Men’s Watch And Make The Right First Impression</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container clearfix">
+				<div class="footer__item">
+					<h3 class="footer__title">NEWSLETTER</h3>
+					<ul class="nav-footer footer__nav-footer">
+						<li class="nav-footer__item nav-footer__item--text">Enter your email address to receive all news, updates on new arrivals, special offers and other discount information.</li>
+						<li class="nav-footer__item nav-footer__item--form">
+							<form class="nav-footer__form" action="#">
+								<input type="text" class="nav-footer__input" placeholder="enter your text">
+								<button class="nav-footer__btn effect-btn" type="submit">subscribe</button>
+							</form>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__item">
+					<h3 class="footer__title">CATEGORIES</h3>
+					<ul class="nav-footer footer__nav-footer">
+						<li class="nav-footer__item"><a href="#" class="nav-footer__link">Men’s</a></li>
+						<li class="nav-footer__item"><a href="#" class="nav-footer__link">Women’s</a></li>
+						<li class="nav-footer__item"><a href="#" class="nav-footer__link">Unisex</a></li>
+						<li class="nav-footer__item"><a href="#" class="nav-footer__link">Luxury</a></li>
+						<li class="nav-footer__item"><a href="#" class="nav-footer__link">Sports</a></li>
+						<li class="nav-footer__item"><a href="#" class="nav-footer__link">Kids'</a></li>
+					</ul>
+				</div>
+				<div class="footer__item">
+					<h3 class="footer__title">MY ACCOUNT</h3>
+					<ul class="nav-footer footer__nav-footer">
+						<li class="nav-footer__item"><a href="#" class="nav-footer__link">My Account</a></li>
+						<li class="nav-footer__item"><a href="#" class="nav-footer__link">My Addresses</a></li>
+						<li class="nav-footer__item"><a href="#" class="nav-footer__link">My Cart</a></li>
+						<li class="nav-footer__item">
+							<div class="social-group nav-footer__socials">
+								<a href="#" class="social-group__socials-icon social-group__socials-icon--footer"><i class="fab fa-facebook-f"></i></a>
+								<a href="#" class="social-group__socials-icon social-group__socials-icon--footer"><i class="fab fa-instagram"></i></a>
+								<a href="#" class="social-group__socials-icon social-group__socials-icon--footer"><i class="fab fa-twitter"></i></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+	<!-- <script src="//cdn.shopify.com/s/files/1/1227/7330/t/2/assets/jquery.1.8.3.js?0" type="text/javascript"></script> -->
+	<script src="js/swiper.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+	<script type="text/javascript">
+
+	</script>
+</body>
+</html>
+
+
