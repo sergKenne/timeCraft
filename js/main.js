@@ -1,12 +1,11 @@
-
+window.addEventListener('resize', function () {
+  viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+  if (viewportWidth < 1025) {
+    location.reload();
+  }
+}, false);
 
 jQuery(document).ready(function($) {
-
-	// window.addEventListener('resize', function() {
-	//     location.reload();
-	// });
-
-	//alert(window.outerWidth);
 
 	var navbar = document.getElementById("nav-bar");
 	var sticky = navbar.offsetTop;
