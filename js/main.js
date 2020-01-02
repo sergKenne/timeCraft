@@ -2,9 +2,9 @@
 
 jQuery(document).ready(function($) {
 
-	window.addEventListener('resize', function() {
-	    location.reload();
-	});
+	// window.addEventListener('resize', function() {
+	//     location.reload();
+	// });
 
 	//alert(window.outerWidth);
 
